@@ -1,5 +1,5 @@
 import {Component, ElementRef, ViewChild} from '@angular/core';
-import {HttpClient} from '@angular/common/http';
+import {HttpClient, HttpRequest, HttpHeaders} from '@angular/common/http';
 import {environment} from '../environments/environment';
 
 @Component({
@@ -42,7 +42,14 @@ export class AppComponent {
     if (this.fileDataUri.length > 0) {
       const base64File = this.fileDataUri.split(',')[1];
       const data = {'image': base64File};
-      this.http.post(`${environment.apiUrl}/file`, data)
+      
+      const req = new HttpRequest('POST', `${environment.apiUrl}/file`, data, {
+        headers : new HttpHeaders({
+          'x-api-key': `${environment.apiKey}`
+        })
+      });
+      
+      this.http.request(req)
         .subscribe(
           res => {
             // handle success

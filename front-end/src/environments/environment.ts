@@ -5,5 +5,6 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'your API gateway URL here' // i.e.'https://exgmvxumxj.execute-api.ap-southeast-2.amazonaws.com/develop'
+  apiUrl: 'https://exgmvxumxj.execute-api.ap-southeast-2.amazonaws.com/develop', // i.e.'https://exgmvxumxj.execute-api.ap-southeast-2.amazonaws.com/develop'
+  apiKey: 'YbVrGjx9R21mAFiUXz8GA59CgYv2olnR63K7X4yP' // i.e. YbVrGjx9R21mAFiUXz8GA59CgYv2olnR63K7X4yP
 };
