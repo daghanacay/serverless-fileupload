@@ -1,0 +1,9 @@
+{
+  "name": "lambda-s3-upload",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "file-type": "7.6.x"
+  }
+}

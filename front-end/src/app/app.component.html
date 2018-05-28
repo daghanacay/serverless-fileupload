@@ -1,0 +1,19 @@
+<h1>Angular File Input</h1>
+<!-- IMG preview -->
+<img [src]="fileDataUri">
+
+<p *ngIf="errorMsg" style="color:red">{{errorMsg}}</p>
+
+<!-- Form with submit method and template variable (#fileInput) -->
+<form (submit)="uploadFile($event)">
+  <input
+    type="file"
+    (change)="previewFile()"
+    #fileInput
+  >
+  <button
+    type="submit"
+    [disabled]="fileDataUri.length === 0"
+  >Upload</button>
+</form>
+
