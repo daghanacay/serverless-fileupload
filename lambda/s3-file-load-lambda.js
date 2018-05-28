@@ -40,13 +40,15 @@ exports.handler = (event, context, callback) => {
         };
 
         s3.putObject(params, (err, data) => {
-            if (err) callback(new Error([err.statusCode], [err.message]));
-            //IMPORTANT: after the execution will return result here.
-            callback(null, {
-                statusCode: '200',
-                headers: {'Access-Control-Allow-Origin': '*'},
-                body: JSON.stringify({'data': data})
-            });
+            if (err) { callback(new Error([err.statusCode], [err.message])) }
+            else {
+                //IMPORTANT: after the execution will return result here.
+                callback(null, {
+                    statusCode: '200',
+                    headers: { 'Access-Control-Allow-Origin': '*' },
+                    body: JSON.stringify({ 'data': data })
+                });
+            }
         });
 
 
