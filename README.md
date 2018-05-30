@@ -14,7 +14,7 @@ See documents folder for instructions.
 ## Folders in this repo
 Serverless-fileupload: root directory
 front-end: angular code
-gateway: AWS API gateway config
+api-gateway: AWS API gateway config
 lambda: AWS lambda code
 documents: this file and other docs
 

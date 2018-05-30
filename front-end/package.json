@@ -21,9 +21,11 @@
     "@angular/platform-browser": "^5.2.0",
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
+    "amazon-cognito-identity-js": "^2.0.2",
     "core-js": "^2.4.1",
     "rxjs": "^5.5.6",
-    "zone.js": "^0.8.19"
+    "zone.js": "^0.8.19",
+    "aws-sdk": "^2.211.0"
   },
   "devDependencies": {
     "@angular/cli": "1.6.8",

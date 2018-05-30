@@ -1,0 +1,8 @@
+      <label for="userinput">User Name</label>
+      <input id="userinput" placehoder="User Name" type="text" [(ngModel)]="username" >
+      <label for="passinput">Password</label>
+      <input placehoder="Password" type="password" [(ngModel)]="password">
+      <button (click)="onLogin()" type="submit">
+        Login
+      </button>
+      {{username2}}
