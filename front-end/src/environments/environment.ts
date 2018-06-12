@@ -5,14 +5,14 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'https://exgmvxumxj.execute-api.ap-southeast-2.amazonaws.com/develop', // i.e.'https://exgmvxumxj.execute-api.ap-southeast-2.amazonaws.com/develop'
-  apiKey: 'YbVrGjx9R21mAFiUXz8GA59CgYv2olnR63K7X4yP', // i.e. YbVrGjx9R21mAFiUXz8GA59CgYv2olnR63K7X4yP
+  apiUrl: 'your api gateway here', // i.e.'https://exgmvxumxj.execute-api.ap-southeast-2.amazonaws.com/develop'
+  apiKey: 'your api key here', // i.e. YbVrGjx9R21mAFiUXz8GA59CgYv2olnR63K7X4yP
 
   /************ RESOURCE IDENTIFIERS *************/
 
   poolData: { 
-    UserPoolId : 'ap-southeast-2_FlxlDAAD2', //CognitoUserPool i.e.  ap-southeast-2_FlxlDAAD2 
-    ClientId : '6mtq7kuokg66hft515muk3cegn', //CognitoUserPoolClient i.e. 6mtq7kuokg66hft515muk3cegn
+    UserPoolId : 'your cognito user pool id here', //CognitoUserPool i.e.  ap-southeast-2_FlxlDAAD2 
+    ClientId : 'your cognito useroool client here', //CognitoUserPoolClient i.e. 6mtq7kuokg66hft515muk3cegn
     Paranoia : 7
   },
 };
